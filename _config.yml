@@ -4,7 +4,7 @@ email: example@domain.com
 description: Just another jekyll theme
 baseurl: ""
 url: "http://example.com"
-permalink: /:year/:month/:day/:title/
+permalink: /:title/
 twitter_username: tuananh_org
 github_username:  tuananh
 
@@ -13,4 +13,4 @@ markdown: kramdown
 
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
+  #syntax_highlighter: rouge
