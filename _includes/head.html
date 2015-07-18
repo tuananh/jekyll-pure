@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }} - {{ site.title }} {% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href='//fonts.googleapis.com/css?family=Fira+Sans:300,400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <!-- <link rel="stylesheet" type="text/css" href="/css/syntax-highlight.css"> -->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <style>
+    html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
+      font-family: 'Fira Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+    }
+  </style>
+</head>

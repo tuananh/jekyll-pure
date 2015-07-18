@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+
+<div class="post">
+
+  <div class="post-header">
+    {% if page.link != nil %}
+      <h1 class="post-title link">
+        {{ page.title }}
+        <a href="{{ page.link }}" class="content-link" title="{{ page.title }}" target="_blank"></a>
+      </h1>
+      {% else %}
+      <h1 class="post-title">{{ page.title }}</h1>
+    {% endif %}
+
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }} • <a href="{{ page.url | prepend:site.baseurl }}">∞</a></p>
+  </div>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {% if page.link != nil %}
+    <a href="{{ page.link }}" target="_blank">link bài gốc</a>
+  {% endif %}
+</div>

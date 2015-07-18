@@ -1,0 +1,16 @@
+title: "jekyll-pure"
+author: Tuan Anh Tran
+email: example@domain.com
+description: Just another jekyll theme
+baseurl: ""
+url: "http://example.com"
+permalink: /:year/:month/:day/:title/
+twitter_username: tuananh_org
+github_username:  tuananh
+
+paginate: 10
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+/* Author */
+  name: Tuan Anh Tran
+  contact: me@tuananh.org
+  twitter: @tuananh_org
+  from: Bangkok, Thailand
+
+/* Site */
+  Built with: Atom editor, jekyll

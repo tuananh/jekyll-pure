@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% for post in paginator.posts %}
+<div class="post-header">
+  {% if post.link != nil %}
+    <h1 class="post-title link">
+      {{ post.title }}
+      <a href="{{ post.link }}" class="content-link" title="{{ post.title }}" target="_blank"></a>
+    </h1>
+    {% else %}
+    <h1 class="post-title">{{ post.title }}</h1>
+  {% endif %}
+  <p class="post-meta">{{ post.date | date_to_string }} • <a href="{{ post.url | prepend:site.baseurl }}">∞</a></p>
+</div>
+<div class="post-excerpt">
+  {{ post.content }}
+</div>
+{% if post.link != nil %}
+  <a href="{{ post.link }}" target="_blank">link bài gốc</a>
+{% endif %}
+<div class="fin">◆</div>
+{% endfor %}
